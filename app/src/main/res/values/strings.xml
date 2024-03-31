@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Guild Wars Companion App</string>
+    <string name="hello_blank_fragment">This is a blank Fragment ya know</string>
+
+
+    <string name="account_page_name">Account</string>
+    <string name="errortext_accountpage">There was an issue with loading your account page: </string>
+    <string name="errortext_chardetailspage">There was an issue with loading your character details page: </string>
+    <string name="errortext_raceinfopage">There was an issue with loading your race info page: </string>
+
+    <string name="prefs_skillsort_key" translatable="false">skillsort</string>
+    <string name="prefs_charsort_key" translatable="false">charsort</string>
+
+    <string name="prefs_skillsort_option_alphabetical" translatable="false">Alphabetical</string>
+    <string name="prefs_skillsort_option_range" translatable="false">Range</string>
+    <string name="prefs_skillsort_option_recharge" translatable="false">Recharge</string>
+
+    <string name="prefs_skillsort_option_alphabetical_val" translatable="false">alphabetical</string>
+    <string name="prefs_skillsort_option_range_val" translatable="false">range</string>
+    <string name="prefs_skillsort_option_recharge_val" translatable="false">recharge</string>
+
+    <string name="prefs_charsort_option_alphabetical" translatable="false">Alphabetical</string>
+    <string name="prefs_charsort_option_level" translatable="false">Level</string>
+    <string name="prefs_charsort_option_class" translatable="false">Class</string>
+
+    <string name="prefs_charsort_option_alphabetical_val" translatable="false">alphabetical</string>
+    <string name="prefs_charsort_option_level_val" translatable="false">level</string>
+    <string name="prefs_charsort_option_class_val" translatable="false">class</string>
+
+
+    <string name = "api_key_Quinn">5D0595AA-208A-6B4C-B4E4-30B63351330EFCCD6DDB-C076-4A7B-B7F8-AFCE31183794</string>
+    <string name = "api_key_Michael">A62DD1DB-445D-9242-B104-9CC2C656A7EF3A063CCB-F4EE-4B03-A0F8-377B3260062E</string>
+
+
+</resources>

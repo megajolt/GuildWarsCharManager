@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/loginpage_frag"
+    >
+    <action
+        android:id="@+id/nav_to_settings"
+        app:destination="@id/settings_fragment"
+        />
+    <!--    Login Page   -->
+    <fragment
+        android:label=""
+        android:id="@+id/loginpage_frag"
+        android:name = "edu.oregonstate.cs492.assignment4.ui.LoginPageFragment">
+        <action
+            android:id="@+id/nav_to_accountpage"
+            app:destination="@id/accountpage_frag"
+            />
+    </fragment>
+
+
+    <!--    Account Page   -->
+    <fragment
+        android:label=""
+        android:id="@+id/accountpage_frag"
+        android:name = "edu.oregonstate.cs492.assignment4.ui.AccountPageFragment">
+        <action
+            android:id="@+id/nav_to_loginpage"
+            app:destination="@id/loginpage_frag"
+            />
+
+        <action
+            android:id="@+id/nav_to_characterdetailspage"
+            app:destination="@id/characterdetailpage_frag"/>
+    </fragment>
+
+
+
+
+
+
+
+    <!--    Character Details Page   -->
+    <fragment
+        android:label=""
+        android:id="@+id/characterdetailpage_frag"
+        android:name = "edu.oregonstate.cs492.assignment4.ui.CharacterDetailPageFragment">
+
+        <action
+            android:id="@+id/nav_to_racepage"
+            app:destination="@id/racepage_frag"
+            />
+        <action
+            android:id="@+id/nav_to_skillpage"
+            app:destination="@id/skillpage_frag"/>
+        <argument
+            android:name="name"
+            app:argType="string"
+            />
+    </fragment>
+
+
+    <!--    Race Page   -->
+    <fragment
+        android:label=""
+        android:id="@+id/racepage_frag"
+        android:name = "edu.oregonstate.cs492.assignment4.ui.RacePageFragment">
+        <argument
+            android:name="id"
+            app:argType="string"/>
+
+        <action
+            android:id="@id/nav_to_characterdetailspage"
+            app:destination="@id/characterdetailpage_frag"
+            />
+        <action
+            android:id="@id/nav_to_skillpage"
+            app:destination="@id/skillpage_frag"
+            />
+    </fragment>
+
+    <!--    Skill Page   -->
+    <fragment
+        android:label=""
+        android:id="@+id/skillpage_frag"
+        android:name = "edu.oregonstate.cs492.assignment4.ui.SkillPageFragment">
+        <argument
+            android:name="id"
+            app:argType="string"
+            />
+        <action
+            android:id="@id/nav_to_characterdetailspage"
+            app:destination="@id/characterdetailpage_frag"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/settings_fragment"
+        android:name="edu.oregonstate.cs492.assignment4.ui.SettingsFragment"
+        android:label="Settings"
+        />
+</navigation>

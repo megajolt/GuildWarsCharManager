@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ListPreference
+        android:title="Skill Sorting"
+        android:key="@string/prefs_skillsort_key"
+        android:entries="@array/pref_sortstring_entries"
+        android:entryValues="@array/pref_sortstring_values"
+        android:defaultValue="@string/prefs_skillsort_option_alphabetical"
+        android:dialogTitle="Skill Sorting"
+        app:useSimpleSummaryProvider="true"
+        />
+    <ListPreference
+        android:title="Character Sorting"
+        android:key="@string/prefs_charsort_key"
+        android:entries="@array/pref_sortchar_entries"
+        android:entryValues="@array/pref_sortchar_values"
+        android:defaultValue="@string/prefs_charsort_option_alphabetical"
+        android:dialogTitle="Skill Sorting"
+        app:useSimpleSummaryProvider="true"
+        />
+
+</androidx.preference.PreferenceScreen>

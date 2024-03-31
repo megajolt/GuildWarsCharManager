@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_sortstring_entries">
+        <item>@string/prefs_skillsort_option_alphabetical</item>
+        <item>@string/prefs_skillsort_option_range</item>
+        <item>@string/prefs_skillsort_option_recharge</item>
+    </string-array>
+    <string-array name="pref_sortstring_values">
+        <item>@string/prefs_skillsort_option_alphabetical_val</item>
+        <item>@string/prefs_skillsort_option_range_val</item>
+        <item>@string/prefs_skillsort_option_recharge_val</item>
+    </string-array>
+    <string-array name="pref_sortchar_entries">
+        <item>@string/prefs_charsort_option_alphabetical</item>
+        <item>@string/prefs_charsort_option_class</item>
+        <item>@string/prefs_charsort_option_level</item>
+    </string-array>
+    <string-array name="pref_sortchar_values">
+        <item>@string/prefs_charsort_option_alphabetical_val</item>
+        <item>@string/prefs_charsort_option_class_val</item>
+        <item>@string/prefs_charsort_option_level_val</item>
+    </string-array>
+</resources>

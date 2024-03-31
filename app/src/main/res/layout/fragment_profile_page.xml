@@ -1,0 +1,139 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AccountPageFragment"
+    android:theme="@style/GuildWarsAppTheme"
+
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/guildwarsicon_round"/>
+    <TextView
+        android:id="@+id/loaderror_accountpage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/errortext_accountpage"
+        android:visibility="invisible"
+        />
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progress_accountpage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        />
+
+
+    <LinearLayout
+        android:id ="@+id/accountpage_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account_page_name"
+            android:textAppearance="?attr/textAppearanceHeadline4"
+
+            android:textColor="@color/page_title_text_color"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"/>
+        <TextView
+            android:id = "@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:textColor="@color/md_theme_primaryFixed"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/round_rectangle"
+            android:backgroundTint="@color/md_theme_scrim_mediumContrast"
+            android:layout_margin="5dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Homeworld"
+                android:layout_marginLeft="5dp"
+                android:textAppearance="?attr/textAppearanceHeadline4"
+                android:textColor="@color/page_title_text_color"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:background="@drawable/round_rectangle"
+                android:backgroundTint="@color/md_theme_onBackground"
+                android:textColor="@color/page_title_text_color"
+                android:textSize="25dp"
+                android:layout_margin="20dp"
+                android:id="@+id/TV_homeworld"
+                android:text = "HomeworldPlacehold"
+                />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/round_rectangle"
+        android:backgroundTint="@color/md_theme_scrim_mediumContrast"
+        android:layout_margin="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guilds"
+            android:layout_marginLeft="5dp"
+            android:textAppearance="?attr/textAppearanceHeadline4"
+            android:textColor="@color/page_title_text_color"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id = "@+id/guildsListRV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/round_rectangle"
+        android:backgroundTint="@color/md_theme_scrim_mediumContrast"
+        android:layout_margin="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Characters"
+            android:layout_marginLeft="5dp"
+            android:textAppearance="?attr/textAppearanceHeadline4"
+            android:textColor="@color/page_title_text_color"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id = "@+id/characterListRV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/md_theme_scrim_mediumContrast"
+            />
+    </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
