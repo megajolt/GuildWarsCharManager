@@ -1,0 +1,9 @@
+Once your team is formed, you must write a proposal that outlines what you plan to implement for the final project.  Specifically, you should work with your team to produce a brief report that includes the following things:
+
+A list of all of the members of your team.  You should aim to have 3 or 4 people on your team.
+A high-level description of what your app will do.
+A link to the specific 3rd-party API your app will use, an explanation of the API methods your app will call, and a description of how the data from those methods will be used in your app or what data will be sent from your app to the API.  The final project description contains a list of APIs that could work well for this project.
+A description of how the UI for your app will be organized, including a list of your app’s activities, a description of how the user will navigate between those activities, a description of any major non-navigation interactions available to the user, and a description of any notifications the app will display.
+A description of the additional feature not covered in class that your app will implement.
+Mocks (i.e. visual prototypes) for each of your app's major activities.  These can be as simple as paper-and-pencil sketches that you scan and include into the report, or you can use a prototyping tool like Figma (and if you do, remember that you can apply for a free Figma education plan since you’re a student).
+A description of the division of labor for the project between the members of your team (see below for more info about this).
